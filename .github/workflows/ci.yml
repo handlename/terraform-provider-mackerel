@@ -34,7 +34,7 @@ jobs:
             ${{ runner.os }}-go-
       - run: make test
         env:
-          TF_ACC: 1
+          # TF_ACC: 1
           MACKEREL_API_KEY: ${{ secrets.MACKEREL_API_KEY }}
           EXTERNAL_ID: ${{ secrets.EXTERNAL_ID }}
           AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN }}
